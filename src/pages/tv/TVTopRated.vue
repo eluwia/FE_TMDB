@@ -1,0 +1,5 @@
+<template>
+    <h1>
+        Top Rated TV Shows
+    </h1>
+</template>
