@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, Static, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router';
+import logo from '../assets/tmdb-logo.svg';
 
 const route = useRoute()
 //mobil için
@@ -17,7 +18,7 @@ watch(() => route.fullPath, () => closeMenu())
            backdrop-blur supports-[backdrop-filter]:backdrop-blur px-4 sm:px-6" @keydown.esc="closeMenu">
     <div class="h-14 max-w-screen-xl mx-auto flex items-center justify-between">
       <RouterLink to="/" class="text-lg sm:text-xl font-semibold">
-        Movie App
+         <img class="absolute max-w-[25vh] self-center left-10 sm:w-[20vh] lg:w-[25vh] " :src="logo"></img>
       </RouterLink>
 
       <!-- mobil -->
